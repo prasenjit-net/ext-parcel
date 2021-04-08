@@ -12,6 +12,7 @@
   "devDependencies": {
     "@parcel/config-webextension": "^2.0.0-nightly.2259",
     "@parcel/transformer-image": "^2.0.0-nightly.2259",
+    "@parcel/transformer-sass": "^2.0.0-nightly.637",
     "parcel": "^2.0.0-nightly.635",
     "sharp": "^0.28.1"
   },
