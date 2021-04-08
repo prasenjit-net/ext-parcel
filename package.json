@@ -1,0 +1,30 @@
+{
+  "name": "ext-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/manifest.json --target webext-dev --no-hmr",
+    "build": "parcel build src/manifest.json --target webext-prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.0.0-nightly.2259",
+    "@parcel/transformer-image": "^2.0.0-nightly.2259",
+    "parcel": "^2.0.0-nightly.635",
+    "sharp": "^0.28.1"
+  },
+  "targets": {
+    "webext-dev": {
+      "sourceMap": {
+        "inline": true,
+        "inlineSources": true
+      }
+    },
+    "webext-prod": {}
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.7.0"
+  }
+}

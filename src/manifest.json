@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "DareAngel",
+    "description": "Ext description",
+    "version": "1.0",
+    "author": "Prasenjit Purohit",
+    "icons": {
+        "48": "url:img/sunflower_48.png?width=48",
+        "128": "url:img/sunflower_128.png?width=128",
+        "192": "url:img/sunflower_192.png?width=192"
+    },
+    "browser_action": {
+        "default_title": "Dare Angel",
+        "default_icon": {
+            "48": "url:img/sunflower_48.png?width=48",
+            "128": "url:img/sunflower_128.png?width=128",
+            "192": "url:img/sunflower_192.png?width=192"
+        },
+        "default_popup": "html/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "js/content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
