@@ -1,3 +1,11 @@
 h1 {
   color: rgba(magenta, 0.3);
 }
+
+.buttonDiv {
+  display: flex;
+
+  svg {
+    color: rgba(red, 0.2);
+  }
+}

@@ -24,14 +24,17 @@
                 "<all_urls>"
             ],
             "js": [
-                "js/content.js"
+                "js/content.ts"
             ],
-            "run_at": "document_start"
+            "css": [
+                "styles/content.scss"
+            ],
+            "run_at": "document_end"
         }
     ],
     "background": {
         "scripts": [
-            "js/background.js"
+            "js/background.ts"
         ],
         "persistent": true
     },
